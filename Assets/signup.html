@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Amazon</title>
+        <style>
+            body{
+                overflow: hidden;
+            }
+            img
+            {
+                width:33%;
+                margin-left: 480px;
+                margin-top: 50px;
+            }
+            h1{
+                margin-left:85px;
+                font-family: monospace;
+            }
+            
+            a{
+                margin-left: 10px;
+            }
+            div.new{
+                margin-left: 580px;
+                font-size: 40px;
+                width: 500px;
+                
+            }
+            .formcontainer {
+                 text-align: center;
+                 margin: 24px 50px 12px;
+            }
+            .container {
+                margin-top: 30px;
+                padding: 16px 0;
+                text-align:left;
+            }
+            span.psw {
+                float: right;
+                padding-top: 0;
+                padding-right: 15px;
+            }
+            .icon {
+                font-size: 110px;
+                display: flex;
+                justify-content: center;
+                color: #4286f4;
+             }
+            button {
+                background-color: #4286f4;
+                color: white;
+                padding: 14px 0;
+                margin: 10px 0;
+                border: none;
+                cursor: grab;
+                width: 48%;
+            }
+            h1 {
+                text-align:center;
+                font-size:18;
+                margin-left: -20px;
+             }
+      
+            form {
+                border: 5px solid #f1f1f1;
+                width: 500px;
+                margin-left: 470px;
+            }
+            input[type=text], input[type=password] {
+                width: 100%;
+                padding: 16px 8px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+            a:hover{
+                color: black;
+            }
+            #skip{
+                background-color: green;
+            }
+            #skip:hover,button:hover{
+                background-color: black;
+            }
+            div.sticky {
+                position: -webkit-sticky;
+                position: sticky;
+                top: 30px;
+                background-color: rgba(0, 0, 0, 0.699);
+                padding: 10px;
+                font-size: 20px;
+                width: 90px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                border-style: groove;
+                margin-left: -90px;
+                overflow: hidden;
+                transition: 1s;
+                color: white;
+            
+            }
+            .sticky:hover{
+                margin-left: -15px;
+                transition: 0.5s;
+            }
+            #stik{
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <a id="stik" href="Home.html">
+        <div class="sticky">Console ></div>
+        </a>
+        <img style="margin-top: -40px;" src="https://i.insider.com/539f3ffbecad044276726c01?width=1100&format=jpeg&auto=webp">
+        <form action="amazon.html">
+            <div class="formcontainer">
+            <div class="container">
+              <label for="uname"><strong>Username</strong></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+              <label for="mail"><strong>E-mail</strong></label>
+              <input type="text" placeholder="Enter E-mail" name="mail" required>
+              <label for="psw"><strong>Password</strong></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+            </div>
+            <button type="submit"><strong>SIGN IN</strong></button>
+            <button id="skip" onclick="document.location='amazon.html'"> <b> Skip>></b></button>
+            <div class="container" style="background-color: #eee">
+                
+              <label style="padding-left: 15px">
+              <input type="checkbox"  checked="checked" name="remember"> Remember me
+              </label>
+              <span class="psw"><a href="#">Forgot password?</a></span>
+            </div>
+          </form><br><br>
+          
+
+    </body>
+</html>

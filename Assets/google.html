@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Google Homepage</title>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+    <style>
+        /* BASIC STYLES */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://wallpaperaccess.com/full/1079101.jpg);
+}
+
+header {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+/* NAV BAR */
+#nav_bar {
+  float: right;
+}
+
+#nav_bar li {
+  display: inline-block;
+  padding: 8px;
+}
+
+#nav_bar #sign_in {
+  background: #4887ef; 
+  margin-right: 25px;
+  padding: 7px 15px;
+  border-radius: 3px; 
+  font-weight: bold;
+}
+
+.nav-links {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li.nav-links a:hover {
+  text-decoration: underline;
+}
+
+#sign_in:hover { 
+  box-shadow: 1px 1px 5px #999;
+}
+
+#sign_in {
+  color: #fff;
+}
+
+/* GOOGLE AREA */
+.google #google_logo {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  clear: both;
+  padding-top: 112px;
+  padding-bottom: 20px;
+}
+
+.form {
+  text-align: center;
+}
+
+#txtSearch { 
+  width: 450px;
+  line-height: 32px;
+  padding: 20px 10px;
+}
+
+.form #txtSearch {
+  padding: 0 8px;
+}
+
+/*#txtSearch:hover {
+  border-color: #e4e4e4;
+  padding-top: 0;
+}*/
+
+.buttons {
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 300px;
+}
+
+/* FOOTER */
+footer  {
+  background: #f2f2f2;
+  border-top: solid 2px #e4e4e4;
+/*   position: fixed; */
+  bottom: 0;
+  padding-bottom: 0;
+  width: 100%;
+  
+}
+
+footer ul li {
+  display: inline;
+  color: white;
+  font-size: 14px;
+  padding: 13px;
+}
+
+footer ul {
+  float: left;
+  padding: 1px;
+}
+
+footer ul a:hover {
+  text-decoration: underline;
+}
+
+.footer-right {
+  float: right;
+}
+
+/* MEDIA QUERIES */
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul id="nav_bar">
+          <li class="nav-links" id="gmail"><a href="https://accounts.google.com/ServiceLogin/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=AddSession">Gmail</a></li>
+          <li class="nav-links"><a href="https://www.google.co.in/imghp?hl=en&tab=wi&ogbl">Images</a></li>
+          <li id="sign_in"><a href="https://accounts.google.com/ServiceLogin/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=AddSession">Sign In</a></li>
+        </ul>  
+      </nav>  
+    </header>  
+    
+    <!-- GOOGLE IMG -->  
+    <div class="google">
+      <a href="#" id="google_logo"><img style="width: 300px;" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Wait Image is Loading"/></a>
+    </div>
+
+    
+    <!-- FORM SEARCH -->  
+    <div class="form">  
+      <form id="frmSearch"  method="get" />
+<input  type="text" id="txtSearch"     
+placeholder="Feel Free to Search"  />
+
+ <!-- BUTTONS -->
+<div class= "buttons">  
+      <input type="submit" value="Google Search" id="google_search">
+      <input type="submit" value="I'm Feeling Lucky" id="im_feeling_lucky">
+    </div>
+
+<script type="text/javascript">
+    document.getElementById('frmSearch').onsubmit = function() {
+        window.location = 'http://www.google.com/search?q=' + document.getElementById('txtSearch').value;
+        return false;
+    }
+</script>
+
+    <!-- FOOTER -->
+    <footer>
+        <ul class="footer-left">
+          <li><a href="https://ads.google.com/intl/en_in/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+          <li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a></li>
+          <li><a href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></li> 
+        </ul>
+        <ul class="footer-right">    
+          <li><a href="https://policies.google.com/privacy?hl=en-IN&fg=1">Privacy</a></li>
+          <li><a href="https://policies.google.com/terms?hl=en-IN&fg=1">Terms</a></li>
+          <li><a href="https://www.google.com/preferences?hl=en-IN&fg=1">Settings</a></li>
+        </ul>       
+    </footer>      
+  </body>
+  </html>
